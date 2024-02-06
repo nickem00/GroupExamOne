@@ -14,7 +14,10 @@ public class Main {
         examples.showNormalExample(numbersList);
     }
 
-    // Två exemplen för att dubblera alla tal i en lista
+    // Två exempel för att dubblera alla tal i en lista och
+    // därefter addera varje tal som är delbart med 3 i en ny lista
+
+    // Streams och Lambda-exempel
     public void showStreamsExample(List<Integer> numbersList) {
         long startTime = System.nanoTime();
 
@@ -28,6 +31,7 @@ public class Main {
         System.err.println("Streams and Lambdas   :  " + duration / 1000000.0 + "ms");
     }
 
+    // Exempel med For-loop och If-sats
     public void showNormalExample(List<Integer> numberList) {
         long startTime = System.nanoTime();
 
