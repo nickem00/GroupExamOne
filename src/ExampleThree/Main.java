@@ -19,21 +19,21 @@ public class Main {
 
     // Streams och Lambda-exempel
     public void showStreamsExample(List<Integer> numbersList) {
-        long startTime = System.nanoTime();
+        long startTime = System.currentTimeMillis();
 
         List<Integer> newList = numbersList.stream()
                 .map(number -> number * 2)
                 .filter(doubledNumber -> doubledNumber % 3 == 0)
                 .toList();
 
-        long endTime = System.nanoTime();
+        long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
-        System.err.println("Streams and Lambdas   :  " + duration / 1000000.0 + "ms");
+        System.err.println("Streams and Lambdas   :  " + duration + "ms");
     }
 
     // Exempel med For-loop och If-sats
     public void showNormalExample(List<Integer> numberList) {
-        long startTime = System.nanoTime();
+        long startTime = System.currentTimeMillis();
 
         List<Integer> doubled = new ArrayList<>();
         for (Integer number : numberList) {
@@ -46,8 +46,8 @@ public class Main {
             }
         }
 
-        long endTime = System.nanoTime();
+        long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
-        System.err.println("If and For-loops      :  " + duration / 1000000.0 + "ms");
+        System.err.println("If and For-loops      :  " + duration + "ms");
     }
 }
