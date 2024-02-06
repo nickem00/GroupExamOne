@@ -48,6 +48,6 @@ public class Main {
 
         long endTime = System.nanoTime();
         long duration = endTime - startTime;
-        System.err.println("If and For-loops      : " + duration / 1000000.0 + "ms");
+        System.err.println("If and For-loops      :  " + duration / 1000000.0 + "ms");
     }
 }
