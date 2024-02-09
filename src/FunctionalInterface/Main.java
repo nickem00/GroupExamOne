@@ -1,4 +1,4 @@
-package LambdaWithoutStream;
+package FunctionalInterface;
 
 
 // Skapar ett interface med en apply-metod
